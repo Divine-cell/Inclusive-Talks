@@ -28,7 +28,7 @@
     <nav>
       <!--Logo-->
       <div id="logo">
-        <a href="../Home Page/index.html">
+        <a href="../../Home Page/index.html">
           <img
             alt="Inclusive Talks Logo"
             src="./images/logo.png"
@@ -50,7 +50,7 @@
             <div class="bar"></div>
             <div class="bar"></div>
           </div>
-          <a href="https://hilda-enyioko.github.io/Inclusive-Talks/"
+          <a href="../../Home Page/index.html"
             ><li class="nav-link">Home</li></a
           >
           <a href="../../Blog Page/blog.html"><li class="nav-link">Blog</li></a>
@@ -83,61 +83,89 @@
         >
       </div>
       <div id="hero-image">
-        <img alt="Our Programs" src="images/hero-image.png" loading="active" />
+        <!-- <img
+          alt="Our Programs"
+          src="./images/5days-of-love.jpg"
+          loading="active"
+        /> -->
       </div>
     </section>
 
     <section id="program1" class="programs">
       <div class="program-card">
-        <div class="program-text">
-          <a href="../WMYFE Page/index.html"
-            ><h1>What Makes You <br />Feel Excluded?</h1></a
-          >
-          <p>
-            Every voice finds comfort here, no matter how trivial your
-            experience may seem. Inclusive Talks provides a safe space for you
-            to unravel the nuances of inclusion. All you've got to do is answer
-            the question - "What Makes You Feel Excluded?"
-          </p>
-        </div>
-        <div class="illustration">
-          <img alt="What Makes You Feel Excluded?" />
+        <a href="../WMYFE Page/index.html"
+        ><h1>What Makes You <br />Feel Excluded?</h1>
+        </a>
+        <div class="program-content">
+          <div class="program-text">
+            <p>
+              Every voice finds comfort here, no matter how trivial your
+              experience may seem. Inclusive Talks provides a safe space for you
+              to unravel the nuances of inclusion. All you've got to do is answer
+              the question - "What Makes You Feel Excluded?"
+            </p>
+          </div>
+          <div class="illustration">
+            <img 
+            src="./images/wmyfe.jpg" 
+            alt="What Makes You Feel Excluded?"
+            loading="lazy" 
+            />
+          </div>
         </div>
       </div>
     </section>
+
+
     <section id="program2" class="programs">
       <div class="program-card">
-        <div class="program-text">
-          <a href="../GuestWriting Page/index.html"
-            ><h1>Guest Writing <br />Program</h1></a
-          >
-          <p>
-            The Inclusive Talks Guest Writing Program, an annual initiative,
-            invites the public to contribute articles promoting diversity and
-            inclusion. It provides a platform for individuals, especially young
-            voices, to freely discuss topics of interest. This program runs from
-            mid-May to the end of June.
-          </p>
+        <a href="../GuestWriting Page/index.html"
+            ><h1>Guest Writing <br />Program</h1>
+        </a>
+        <div class="program-content">
+          <div class="program-text">
+            <p>
+              The Inclusive Talks Guest Writing Program, an annual initiative,
+              invites the public to contribute articles promoting diversity and
+              inclusion. It provides a platform for individuals, especially young
+              voices, to freely discuss topics of interest. This program runs from
+              mid-May to the end of June.
+            </p>
+          </div>
+          <div class="illustration">
+            <img
+              src="./images/guest-writing.jpg"
+              alt="Become A Guest Writer!"
+              loading="lazy"
+            />
+          </div>
         </div>
-        <div class="illustration"></div>
       </div>
     </section>
     <section id="program3" class="programs">
       <div class="program-card">
-        <div class="program-text">
-          <a href="../5DaysOfLove Page/index.html"
+        <a href="../5DaysOfLove Page/index.html"
             ><h1>5 Days Of <br />Love</h1></a
           >
-          <p>
-            #5daysoflove is an annual initiative (20th - 24th December)
-            dedicated to spreading messages of love and hope to 5 different
-            categories of youths in our society. we invite everyone to send
-            uplifting messages, as we believe these words can ignite a ray of
-            hope in someone’s life. Your heartfelt messages will be shared
-            across all our social platforms.
-          </p>
-        </div>
-        <div class="illustration"></div>
+          <div class="program-content">
+            <div class="program-text">
+              <p>
+                #5daysoflove is an annual initiative (20th - 24th December)
+                dedicated to spreading messages of love and hope to 5 different
+                categories of youths in our society. we invite everyone to send
+                uplifting messages, as we believe these words can ignite a ray of
+                hope in someone’s life. Your heartfelt messages will be shared
+                across all our social platforms.
+              </p>
+            </div>
+            <div class="illustration">
+              <img
+                src=".\images\5days-of-love.jpg"
+                alt="5 Days of Love"
+                loading="lazy"
+              />
+            </div>
+          </div>
       </div>
     </section>
 
@@ -150,12 +178,13 @@
           notifications of new posts by email.
         </p>
         <input
-          type="email"
-          placeholder="Email address"
+          type="text"
           name=""
           id="input-email"
+          placeholder="Email address"
         /><br />
-        <button class="cta-button" type="button" action="">SUBSCRIBE</button>
+        <div id="feedback" style="display: none; color: red"></div>
+        <button class="cta-button" id="sub-btn" type="button">SUBSCRIBE</button>
       </div>
     </section>
 
@@ -237,5 +266,6 @@
       </div>
     </footer>
     <script src="./script.js"></script>
+    <script src="../../subscribe.js"></script>
   </body>
 </html>
